@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+body{
+margin:0; padding:0;	
+}
+/*centres the container div as well as all the divs that are nested within i.e banner, content etc*/
+.container {
+	width:80%; margin:0 auto;
+}
+/* makes the banner fill the entire width of the div */
+.banner{
+	width:100%;	
+}
+/*sets the navigation to be the width of the entire div, as well as setting its height and other styles such as the text font, colour etc*/
+.navigation {
+height:66px;
+width:100%;
+background:#020202;
+font-size:11pt;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+top:0; 
+text-align:center;
+}
+/*creates invisible spacing around the navigation */
+.navigation ul{	
+	margin:0;
+	height:5px;
+}
+/*makes the naviagtion links appear one line rather than underneath each other*/
+.navigation li{	
+	display:inline;
+}
+/* sets the styling of the text within the navigation such as centering the text and adding a border on the right hand side */
+.navigation a{
+	color:#FFFFFF;
+	display:inline-block;
+	width:240px;
+	text-align:center;
+	text-decoration:none;
+	padding:24px 0;
+	font-weight:300;
+	border-right:1px solid #FFFFFF;
+}
+/*used to style the first navigation link in order to add a border on the left hand side */
+.leftborder{
+	color:#FFFFFF;
+	display:inline-block;
+	width:240px;
+	text-align:center;
+	text-decoration:none;
+	padding:24px 0;
+	font-weight:300;
+	border-left:1px solid #FFFFFF;
+}
+/*makes the background of the navigation links turn red once a mouse hovers over it*/
+.navigation a:hover{
+	background:#FF0004;
+}
+/*article div used to make any element placed in this div centered and take up the whole width of the container div*/
+.article{
+	width:100%;
+	float:left;
+	text-align: center;
+}
+/*article-half-left div used to make any element placed in this div appear the left hand side and be half the width of the container div*/
+.article-half-left{
+	width:49%;
+	float:left;
+	margin-right: 2%;
+	margin-top:20px;
+	
+}
+/*article-half-right div used to make any element placed in this div appear on the right hand side and be half the width of the container div*/
+.article-half-right{
+	width:49%;
+	float:left;
+	margin-top:20px;
+	
+}
+/*article-third-left div used to make any element placed in this div appear on the left hand side and be one third the width of the container div*/
+.article-third-left{
+	width:30%;
+	float:left;
+	margin-right: 5%;
+	margin-top:20px;
+}
+/*article-third-right div used to make any element placed in this div appear on the right hand side and be one third the width of the container div*/
+.article-third-right{
+	width:30%;
+	float:left;
+	margin-top:20px;
+}
+/*used to set the colour of the footer, the text colour and the padding (used to space text more on the left side of the div ) to space of the footer*/
+.footer{
+	background:#000;
+	color:#FFF;
+	padding:20px;
+	/*This prevents floating elements from being on the left side or the right- meaning fixes the footer to appear on the bottom*/
+	clear:both;
+
+}
+/*sets all images contained in a div to fill the width of the div*/
+img {
+	width:100%; height:auto;s
+}
+/*used to set the colour, font size and the type of font used in the head*/
+h1{
+	color:#F00;
+	font-size:20pt;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	
+}
+/*used to set the text colour and the type of font used in the paragraph tag*/
+p{
+	color:#fff;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+}
+/*used to set an overwrite colour (red) of certain words in order to make them stand out*/
+span{
+	color:#FD0004;
+	
+}
+h4{
+	color:#F00;
+}
+/*used to set the text colour as well as the type of font used in any paragraph tag which uses this class - synopsis*/
+p.synopsis{
+	color:#000;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+}
+/*sets the colour of the labels in the form to black*/
+label{
+	color:#000;
+}
+/*used to center the enquiry form*/
+form{
+    display: inline-block;
+    text-align: center;
+    }
+/*used to make the textboxes present with the form fill the entire width of the centered form as well as adding a grey boarder around the textboxes*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/*used to make the telephone field on the form fill the entire width of the centered form as well as adding a grey border around it*/
+input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/*makes the comment field fill the entire width of the centered form as well as adding a grey boarder around it*/
+textarea[type=comment], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/*makes the submit button fill the entire width of the centered form as well as making it appear black without any boarder*/
+input[type=submit] {
+    width: 100%;
+    background-color:#000;
+    color:#FFF;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*makes the reset button fill the entire width of the centered form as well as making it appear black without any boarder*/
+input[type=reset] {
+    width: 100%;
+    background-color:#000;
+    color:#FFF;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*makes the submit button turn red once the mouse hovers over it*/
+input[type=submit]:hover {
+    background-color:#F00;
+}
+/*makes the reset button turn red once the mouse hovers over it*/
+input[type=reset]:hover {
+    background-color:#F00;
+}
+
+/*used to adjust the size of divs and all the elements present in them in order to fit a different screen resolution which is 750px wide or smaller*/
+}
+@media screen and (max-width:750px){
+.article-third-left{
+		width:100%;
+		margin-top15;}
+.article-third-right{
+		width:100%;
+		margin-top:15px;
+}
+
+		
+.ipad{
+			margin-right:2%;
+		}
+		
+/*used to adjust the size of divs and all the elements present in them in order to fit a different screen resolution which is 480px wide or smaller*/	
+}
+@media screen and (max-width:480px)
+{
+	.container {
+	width:90%;
+	margin:0 auto;
+	}
+	.article-half-left{
+		width:100% 
+		margin-top:10px;
+	}
+	.article-half-left{
+		width:100% 
+		margin-top:10px;
+	}
+	.article-half-right{
+		width:100% 
+		margin-top:10px;
+	}
+	.article-third-left{
+		width:100% 
+		margin-top:10px;
+	}
+	.article-third-right{
+		width:100% 
+		margin-top:10px;
+	}
+	
+
+}/* CSS Document */
+

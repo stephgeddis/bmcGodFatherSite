@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- meta tags used for search engine crawling-->
+<meta name="description" content="Contact details,enquiry form and google map location for the company.">
+<meta name="keywords" content="contact details, google map, enquiry form ">
+<meta name="author" content="Stephen Geddis">
+<!-- used to display text in the tab of the web browser-->
+<title>Contact Us</title>
+<!-- used to link the various css style sheets to the html document-->
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+<link href="styles/normalise.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--container div used to contain all the various divs in order to controll the layout via centering the page in CSS-->
+<div class = "container">
+<!--banner div used to display an image in the banner-->
+<div class = "banner">
+<img src="images/websiteBanner.jpg">
+</div>
+<!-- navigation used to create navigation links to the various pages of the site in the form of a navigation bar-->
+<div class = "navigation">
+<p>
+<ul>
+<li><a class="leftborder" href ="index.html">Home</a></li>
+<li><a href ="godfatherone.html">The GodFather I</a></li>
+<li><a href ="godfathertwo.html">The GodFather II</a></li>
+<li><a  href ="contactus.html">Contact Us</a></li>
+</ul> 
+</p>
+</div>
+<!-- used to display a google map location of the company on the length hand side of the page which is half the width of the container-->
+<div class= "article-half-left">
+<h1>Find Us</h1>
+<!-- iframe used to display the map the width is set to 100% in order to make it full the whole width of the div-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9244.945247680176!2d-5.9361941!3d54.5998295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48b9fc7dd14c61b3!2sBelfast+Metropolitan+College!5e0!3m2!1sen!2suk!4v1491414844283" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<!--used to display contact information on the right hand side of the screen-->
+<div class= "article-half-right">
+<h1>Contact Information</h1>
+     <ul>	
+  	 <li><strong>Telephone:</strong>028 9026 5000</li>
+     <li><strong>Address:</strong>125-153 Millfield</li>
+     <!--&nbsp; used to add a space to make it look more neat -->
+     <li><strong>Post Code:</strong>&nbsp;BT1 1HS</li>
+	 <li><strong>E-mail:</strong>contact@millfield.com</li>
+     </ul>
+
+
+</div>
+<!-- article div used to display a form which is centered in the middle of said the div-->
+<div class= "article">
+<h1>Sign Up Form</h1>
+<h5>Sign up to recieve newsletters by post and email!</h5>
+
+
+<!-- used to open an email client on the users machine in order to allow them to send the information via email to the email provided in the code - contact@millfield.com. The form itself has validation in place to prevent the user from leaving out certain fields-->
+<form action="MAILTO:contact@millfield.com" method="post" enctype="text/plain">
+
+
+<!-- creates a mandatory text field which allows the user to enter their name-->
+<p>
+<label for="name">Name</label>
+<input type="text" name="name" id="name" placeholder="Please enter your full name" required />
+
+</p>
+
+
+<!-- creates a mandatory text field which allows the user to enter their email address-->
+
+<p>
+<label for="email">Email</label>
+<input type="text" name="email" id="email" placeholder="mail@example.com"required  />
+</p>
+
+
+<!-- creates a mandatory field which allows the user to enter their telephone number-->
+<p>
+<label for="tel">Telephone</label>
+<input type="tel" name="tel" id="tel" placeholder="Please enter your telephone number" required />
+</p>
+<!-- creates a mandatory text field which allows the user to enter their address-->
+<p>
+<label for="addone">Address Line 1</label>
+<input type="text" name="addone" id="addone" placeholder="Please enter your address" required />
+</p>
+<!-- creates a text field which allows the user to enter any additonal adressing information-->
+<p>
+<label for="addtwo">Address Line 2</label>
+<input type="text" name="addtwo" id="addtwo" placeholder="Additonal address information" />
+</p>
+<!-- creates a mandatory text field which allows the user to enter their post code-->
+<p>
+<label for="postcode">Post Code</label>
+<input type="text" name="postcode" id="postcode" placeholder="Please enter your post code" required />
+</p>
+<!-- creates a text field which allows the user to enter a comment if they wish to do so-->
+<p>
+<label>Comment</label><br />
+<textarea type="comment" name="text" placeholder="Please enter any comments you may have" /></textarea>
+<p>
+<!-- creates a submit button in order to allow the user to submit the form thus triggering the MailTo action and validation checks-->
+<input type="submit" value="Send" />
+<!-- creates a button which will allow the user to reset the form if the wish to do so. It is also worthy to note that the form will auto reset if the form submit is succesful meaning the form passes the validation checks put in place-->
+<input class="button" type="reset" value="Reset">
+</p>
+
+ </form>
+	
+ 	
+    
+</div>
+<!-- footer div used to create a footer for the weboages which is used to display contact and copyright information-->
+<div class = "footer clearfix">
+<div class ="article-third-left">
+<h4>Contact Us</h4>
+<p>Tel:028 9026 5000</p>
+</div>
+<div class ="article-third-left">
+<h4>Find Us</h4>
+<p>125-153 Millfield<br/>
+Belfast<br/>
+BT1 1HS</p></div>
+<div class ="article-third-right">
+<h4>Copyright</h4>
+<p>&copy; Stephen Geddis 2017</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

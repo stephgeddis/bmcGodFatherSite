@@ -1,0 +1,92 @@
+@charset "utf-8";
+body{
+margin:0; padding:0;	
+}
+.container {
+	width:80%; margin:0 auto;
+}
+
+.banner{
+	width:100%;	
+}
+.navigation {
+height:66px;
+width:100%;
+top:0; 
+
+}
+.article{
+	width:100%;
+	float:left;
+}
+.article-half-left{
+	width:49%;
+	float:left;
+	margin-right: 2%;
+	margin-top:20px;
+}
+.article-half-right{
+	width:49%;
+	float:left;
+	margin-top:20px;
+}
+.article-third-left{
+	width:30%;
+	float:left;
+	margin-right: 5%;
+	margin-top:20px;
+}
+.article-third-right{
+	width:30%;
+	float:left;
+	margin-top:20px;
+}
+
+.footer{
+	width:100%	
+}
+img {
+	width:100%; height:auto;s
+}
+@media screen and (max-width:750px){
+.article-third-left{
+		width:100%;
+		margin-top15;}
+.article-third-right{
+		width:100%;
+		margin-top:15px;
+		}
+.ipad{
+			margin-right:2%;
+		}
+		
+		
+}
+@media screen and (max-width:480px)
+{
+	.container {
+	width:90%;
+	margin:0 auto;
+	}
+	.article-half-left{
+		width:100% 
+		margin-top:10px;
+	}
+	.article-half-left{
+		width:100% 
+		margin-top:10px;
+	}
+	.article-half-right{
+		width:100% 
+		margin-top:10px;
+	}
+	.article-third-left{
+		width:100% 
+		margin-top:10px;
+	}
+	.article-third-right{
+		width:100% 
+		margin-top:10px;
+	}
+}/* CSS Document */
+
